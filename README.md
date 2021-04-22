@@ -16,3 +16,8 @@ If you want to read WriteUps about other fields, you can find other member's Git
 
 # Contact
 Facebook: [https://www.facebook.com/MochiNishimiya/](https://www.facebook.com/MochiNishimiya/)
+
+- Dashes work just as well
+- And if you have sub points, put two spaces before the dash or star:
+  - Like this
+  - And this
