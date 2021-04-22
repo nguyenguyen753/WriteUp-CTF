@@ -155,7 +155,7 @@ LAB_00101592:
 
 Chỉ việc nhìn sơ qua, chúng ta không có nhiều thông tin, nên lần này sẽ debug bằng IDA:
 
-~[alt_text](./easy_chall.png)
+![alt_text](./easy_chall.png)
 
 Điều kiện đầu tiên yêu câu độ dài buffer phải bằng 0x23, tức là 35. Vậy ta có thể đoán flag sẽ có độ dài là 35.
 Ta có 2 cách để bypass điều kiện này:
@@ -164,25 +164,25 @@ Ta có 2 cách để bypass điều kiện này:
 
 Tiếp tục debug:
 
-~[alt_text](./simple_chall1.png)
+![alt_text](./simple_chall1.png)
 
 Vòng for đầu tiên để khởi tạo mảng
 
-~[alt_text](./easychall2.png)
+![alt_text](./easychall2.png)
 
 Vòng for thứ hai sẽ Xor 2 chuỗi `Hello World` và chuỗi `Input` cho chúng ta.
 
-~[alt_text](./hello world.png)
+![alt_text](./hello world.png)
 
 Đây là chuỗi `Hello World`
 
 Tiếp tục debug:
 
-~[alt_text](./easychall3.png)
+![alt_text](./easychall3.png)
 
 Đây là phần quan trọng của chương trình, đoạn này sẽ lấy các kết quả sau khi Xor được từ 2 chuỗi, làm index cho `key buffer` và gán cho `key buffer` các giá trị từ 1 đến 35
 
-~[plot](./easychall4.png)
+![alt_text](./easychall4.png)
 
 Đoạn này sẽ kiểm tra kết quả với mảng tại giá trị `[rbp+rax-110h]`. Sau khi debug xong, ta vẽ viết script để tìm flag:
 
