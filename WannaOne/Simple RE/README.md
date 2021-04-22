@@ -83,3 +83,5 @@ undefined8 FUN_0040097c(void)
   return 0;
 }
 ```
+
+Có vẻ ta thấy được đoạn chương trình cần tìm trong source code. Nhưng khi đưa vào IDA để debug thử thì mình có một phát hiện khác:
