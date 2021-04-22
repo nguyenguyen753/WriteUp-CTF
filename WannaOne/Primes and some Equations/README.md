@@ -13,7 +13,7 @@ chall: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically link
 ### Chạy chương trình:
 
 ```bash
-$ ./chall 12345
+$ ./chall MOCHIZOUUU???                                                                                                                                                                                           
 
 Try again!
 ```
