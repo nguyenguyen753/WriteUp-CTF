@@ -86,3 +86,72 @@ undefined8 FUN_0040097c(void)
 
 Có vẻ ta thấy được đoạn chương trình cần tìm trong source code. Nhưng khi đưa vào IDA để debug thử thì mình có một phát hiện khác:
 ![alt text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/simple_re.png)
+Nếu để ý kĩ thì `xor eax eax` sẽ clear thanh ghi eax, tức là eax = 0, `div eax` sẽ lấy eax / eax, điều này là không thể vì eax lúc nào cũng sẽ = 0. Khi quan sát trong lúc debug, ta sẽ thấy chương trình sẽ bị nhảy đến một function khác vì gặp lỗi này.
+```C++
+void FUN_004007f6(void)
+
+{
+  ulong uVar1;
+  undefined8 *puVar2;
+  undefined8 *puVar3;
+  byte bVar4;
+  int local_24;
+  int local_20;
+  __pid_t local_1c;
+  undefined8 *local_18;
+  uint local_c;
+  
+  bVar4 = 0;
+  local_18 = (undefined8 *)mmap((void *)0x0,0x400,7,0x21,-1,0);
+  if (local_18 == (undefined8 *)0xffffffffffffffff) {
+                    /* WARNING: Subroutine does not return */
+    exit(1);
+  }
+  local_1c = fork();
+  if (local_1c < 0) {
+                    /* WARNING: Subroutine does not return */
+    exit(1);
+  }
+  if (local_1c == 0) {
+    local_c = 0;
+    while (local_c < 0x11a) {
+      *(byte *)((long)&DAT_006020e0 + (long)(int)local_c) =
+           *(byte *)((long)&DAT_006020e0 + (long)(int)local_c) ^ 1;
+      local_c = local_c + 1;
+    }
+    *local_18 = DAT_006020e0;
+    *(undefined8 *)((long)local_18 + 0x112) = DAT_006021f2;
+    puVar2 = (undefined8 *)
+             ((long)local_18 - (long)(undefined8 *)((ulong)(local_18 + 1) & 0xfffffffffffffff8));
+    uVar1 = (ulong)((int)puVar2 + 0x11aU >> 3);
+    puVar2 = (undefined8 *)((long)&DAT_006020e0 - (long)puVar2);
+    puVar3 = (undefined8 *)((ulong)(local_18 + 1) & 0xfffffffffffffff8);
+    while (uVar1 != 0) {
+      uVar1 = uVar1 - 1;
+      *puVar3 = *puVar2;
+      puVar2 = puVar2 + (ulong)bVar4 * -2 + 1;
+      puVar3 = puVar3 + (ulong)bVar4 * -2 + 1;
+    }
+    munmap(local_18,0x400);
+  }
+  else {
+    waitpid(local_1c,&local_24,0);
+    if (local_24 == 0) {
+      local_20 = (*(code *)local_18)(&DAT_00602210);
+      if (local_20 == 0) {
+        puts("Incorrect!");
+      }
+      else {
+        printf("Correct! Flag: %s\n",&DAT_00602210);
+      }
+    }
+    munmap(local_18,0x400);
+  }
+                    /* WARNING: Subroutine does not return */
+  exit(0);
+}
+```
+Đây mới chính là đoạn chương trình sẽ kiểm tra flag của chúng ta.
+Tóm lại, đoạn chương trình chính kia sẽ dẫn chúng ta tới 1 fake flag nếu như các bạn dùng static analysis, đoạn chương trình khi gặp lỗi sẽ dẫn chúng ta tới đúng đoạn chương trình mình cần. Bây giờ chúng ta chỉ cần debug để tìm flag.
+### Tìm flag:
+Debug tiếp, ta tới các đoạn chương trình sau:
