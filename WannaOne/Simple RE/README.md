@@ -168,6 +168,7 @@ Debug tiếp, ta tới các đoạn chương trình sau:
 
 Đoạn chương trình này sẽ xor 2 buffer WannaOne và buffer được tạo ra từ những byte ngẫu nhiên từ đoạn chương trình ta đã thấy
 
-~[alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/flag.png)
+
+![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/flag.png)
 
 `Flag: flag{4maz1ng_y0u_g0t_1t!!!!!}`
