@@ -1,6 +1,9 @@
 # Đề bài:
-`Description: I have been lonely for a long time because I only spent most of the time on doing maths and analyzing the primes . So today I decide to find my lover. How about you? Who is your destiny? Maybe, cracking this challenge will help you find out the answer.`
+
+```
+Description: I have been lonely for a long time because I only spent most of the time on doing maths and analyzing the primes . So today I decide to find my lover. How about you? Who is your destiny? Maybe, cracking this challenge will help you find out the answer.
 [chall](https://drive.google.com/file/d/1WqOovtZdNMK1LHiHcGPGS0FiKxrKWdu5/view?usp=sharing)
+```
 
 # Cách làm:
 
