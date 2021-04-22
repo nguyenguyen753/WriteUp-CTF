@@ -190,7 +190,7 @@ Ta sẽ phân tích từng đoạn:
 
 Khởi tạo 2 mảng `puVar3`, `puVar4`, `iVar1` có vẻ là số lượng phần tử của 2 mảng `puVar3` và `puVar4`, `iVar1` lấy giá trị từ mảng `arr2`, ta thử xem giá trị của mảng `arr2`:
 
-![alt_text](prime1)
+![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Primes%20and%20some%20Equations/prime1.png)
 
 Tiếp tục đoạn chương trình tiếp theo:
 
