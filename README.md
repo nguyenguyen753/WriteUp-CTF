@@ -19,5 +19,5 @@ If you want to read WriteUps about other fields, you can find other member's Git
 - Github:
   - Re: [https://github.com/nguyenguyen753/WriteUp-CTF/](https://github.com/nguyenguyen753/WriteUp-CTF/)
   - Pwn: [https://github.com/pivikk/CTF](https://github.com/pivikk/CTF)
-  - Web: 
+  - Web: [https://github.com/Iam4rtsit/WannaOne](https://github.com/Iam4rtsit/WannaOne)
   - Crypto: 
