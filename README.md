@@ -15,9 +15,9 @@ I write these WriteUps on the purpose of spreading CTF-spirit to those who has b
 If you want to read WriteUps about other fields, you can find other member's GitHub pages in the Contact section. Thank you for reading this and I'm looking forward to recieving your responses about our WriteUps.
 
 # Contact
-Facebook: [https://www.facebook.com/MochiNishimiya/](https://www.facebook.com/MochiNishimiya/)
-
-- Dashes work just as well
-- And if you have sub points, put two spaces before the dash or star:
-  - Like this
-  - And this
+- Facebook: [https://www.facebook.com/MochiNishimiya/](https://www.facebook.com/MochiNishimiya/)
+- Github:
+  - Re: [https://github.com/nguyenguyen753/WriteUp-CTF/](https://github.com/nguyenguyen753/WriteUp-CTF/)
+  - Pwn: [https://github.com/pivikk/CTF](https://github.com/pivikk/CTF)
+  - Web: 
+  - Crypto: 
