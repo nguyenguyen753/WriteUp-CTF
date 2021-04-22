@@ -7,8 +7,8 @@
 $ file simple_re.jpg      
 simple_re.jpg: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=33cacc9c4e24e18b6b3e8807a3e8870cbe347ff1, stripped
 ```
-###Ghidra
-```
+### Ghidra
+```C++
 undefined8 FUN_0040097c(void)
 
 {
