@@ -172,7 +172,7 @@ Vòng for đầu tiên để khởi tạo mảng
 
 Vòng for thứ hai sẽ Xor 2 chuỗi `Hello World` và chuỗi `Input` cho chúng ta.
 
-![alt_text](./hello world.png)
+![alt_text](./helloworld.png)
 
 Đây là chuỗi `Hello World`
 
