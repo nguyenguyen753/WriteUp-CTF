@@ -182,7 +182,7 @@ Tiếp tục debug:
 
 Đây là phần quan trọng của chương trình, đoạn này sẽ lấy các kết quả sau khi Xor được từ 2 chuỗi, làm index cho `key buffer` và gán cho `key buffer` các giá trị từ 1 đến 35
 
-~[alt_text](./easychall4.png)
+~[plot](./easychall4.png)
 
 Đoạn này sẽ kiểm tra kết quả với mảng tại giá trị `[rbp+rax-110h]`. Sau khi debug xong, ta vẽ viết script để tìm flag:
 
