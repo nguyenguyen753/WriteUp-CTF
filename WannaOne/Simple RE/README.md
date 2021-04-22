@@ -164,7 +164,7 @@ Debug tiếp, ta tới các đoạn chương trình sau:
 
 Đoạn chương trình tiếp theo sẽ là mấu chốt của vấn đề lấy được flag như thế nào
 
-![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/simple_re2.png)
+![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/abc.png)
 
 Đoạn chương trình này sẽ xor 2 buffer WannaOne và buffer được tạo ra từ những byte ngẫu nhiên từ đoạn chương trình ta đã thấy
 
