@@ -155,12 +155,19 @@ void FUN_004007f6(void)
 Tóm lại, đoạn chương trình chính kia sẽ dẫn chúng ta tới 1 fake flag nếu như các bạn dùng static analysis, đoạn chương trình khi gặp lỗi sẽ dẫn chúng ta tới đúng đoạn chương trình mình cần. Bây giờ chúng ta chỉ cần debug để tìm flag.
 ### Tìm flag:
 Debug tiếp, ta tới các đoạn chương trình sau:
+
 ![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/175940674_1188650554904800_7375870996476900416_n.png)
+
 Đi vô đoạn chương trình của thanh ghi `rdx`:
+
 ![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/simple_re1.png)
+
 Đoạn chương trình tiếp theo sẽ là mấu chốt của vấn đề lấy được flag như thế nào
+
 ![alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/simple_re2.png)
+
 Đoạn chương trình này sẽ xor 2 buffer WannaOne và buffer được tạo ra từ những byte ngẫu nhiên từ đoạn chương trình ta đã thấy
+
 ~[alt_text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/flag.png)
 
 `Flag: flag{4maz1ng_y0u_g0t_1t!!!!!}`
