@@ -85,3 +85,4 @@ undefined8 FUN_0040097c(void)
 ```
 
 Có vẻ ta thấy được đoạn chương trình cần tìm trong source code. Nhưng khi đưa vào IDA để debug thử thì mình có một phát hiện khác:
+![alt text](https://github.com/nguyenguyen753/WriteUp-CTF/blob/main/WannaOne/Simple%20RE/simple_re.png)
