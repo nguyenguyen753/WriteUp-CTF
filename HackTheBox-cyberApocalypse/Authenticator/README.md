@@ -10,7 +10,7 @@ authenticator: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamica
 ```
 
 Chạy thử chương trình:
-[!alt_text](./authenticator1.png)
+![alt_text](./authenticator1.png)
 
 
 
