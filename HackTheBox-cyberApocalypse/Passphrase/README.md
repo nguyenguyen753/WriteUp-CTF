@@ -108,19 +108,19 @@ undefined8 main(void)
 Ta thấy rằng chương trình chỉ kiểm tra ngay đoạn `iVar1 = strcmp(&local_58,acStack57 + 1);`, ta sẽ dùng IDA debug để lấy flag:
 
 <p align="center">
-  <img src="./passphrase1" alt="Run binary"/>
+  <img src="./passphrase1.png" alt="Run binary"/>
 </p>
 
 <p align="center">
-  <img src="./passphrase2" alt="IDA 1"/>
+  <img src="./passphrase2.png" alt="IDA 1"/>
 </p>
 
 <p align="center">
-  <img src="./passphraseflag" alt="Final flag"/>
+  <img src="./passphraseflag.png" alt="Final flag"/>
 </p>
 
 <p align="center">
-  <img src="./passphraseresult" alt="Result"/>
+  <img src="./passphraseresult.png" alt="Result"/>
 </p>
 
 `CHTB{3xtr4t3rR3stR14L5_VS_hum4n5}`
