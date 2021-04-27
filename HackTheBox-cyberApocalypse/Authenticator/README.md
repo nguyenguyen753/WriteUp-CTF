@@ -11,15 +11,17 @@ authenticator: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamica
 
 Chạy thử chương trình:
 
-		![alt_text](./authenticator1.png)
+<p align="center">
+  <img src="./authenticator1.png" alt="cursed image"/>
+</p>
 
 Ta cho vào ghidra để xem thử đoạn chương trình này:
 
-		![alt_text](./authenticator2.png)
+![alt_text](./authenticator2.png)
 
 Nhìn sơ, ta có thể hiểu được rằng có 2 lớp kiểm tra, thứ nhất là nhập ID, thứ hai là nhập Pin. Ta cũng biết rằng `ID = 11337`, còn mã Pin được check trong hàm `checkpin()`, ta xem thử hàm `checkpin()`:
 
-		![alt_text](./authenticator3.png)
+![alt_text](./authenticator3.png)
 
 Từ đây, ta viết script để tìm flag:
 
