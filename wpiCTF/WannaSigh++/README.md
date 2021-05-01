@@ -168,11 +168,11 @@ Bài này mình có 2 chỗ tới giờ mình vẫn chưa hiểu, mong các cao 
   <img src="./wanna6.png" alt="Entry point"/>
 </p>
 
-    Ngay khúc này, mình thực sự thắc mắc là `seed` truyền vô chắc chắn là `0x2a`, nhưng khi debug <i>lần đầu tiên</i>, mình lại ra một kết quả khác là `0x607a2592`, cũng chính là số mà server sẽ trả về cho mình
+  Ngay khúc này, mình thực sự thắc mắc là `seed` truyền vô chắc chắn là `0x2a`, nhưng khi debug <i>lần đầu tiên</i>, mình lại ra một kết quả khác là `0x607a2592`, cũng chính là số mà server sẽ trả về cho mình
   - Mục đích mình in nghiêng cụm từ `lần đầu tiên` là vì khi minh debug lại chương trình, mình phát hiện ra rằng khi gửi request lên server lần thứ 2 liên tiếp trở đi, mình nhận một kết quả hoàn toàn khác so với lần đầu:
 
 <p align="center">
   <img src="./wanna6.png" alt="Entry point"/>
 </p>
 
-    Mình phải chờ một khoảng thời gian lâu sau đó thì mình mới có thể nhận lại kết quả ban đầu. Lúc này mình thắc mắc là do bên server nó cố tình code như thế, hay là do mình đã chưa hiểu gì đó về mấy cái mạng network này @@, hoặc có thể có đoạn nào đó trong bin mình đã đọc chưa kĩ =((((
+  Mình phải chờ một khoảng thời gian lâu sau đó thì mình mới có thể nhận lại kết quả ban đầu. Lúc này mình thắc mắc là do bên server nó cố tình code như thế, hay là do mình đã chưa hiểu gì đó về mấy cái mạng network này @@, hoặc có thể có đoạn nào đó trong bin mình đã đọc chưa kĩ =((((
