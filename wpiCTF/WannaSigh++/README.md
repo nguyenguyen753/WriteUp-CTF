@@ -172,7 +172,7 @@ Bài này mình có 2 chỗ tới giờ mình vẫn chưa hiểu, mong các cao 
   - Mục đích mình in nghiêng cụm từ `lần đầu tiên` là vì khi mình debug lại chương trình, mình phát hiện ra rằng khi gửi request lên server lần thứ 2 liên tiếp trở đi, mình nhận một kết quả hoàn toàn khác so với lần đầu:
 
 <p align="center">
-  <img src="./wanna6.png" alt="Entry point"/>
+  <img src="./wanna7.png" alt="Entry point"/>
 </p>
 
   Mình phải chờ một khoảng thời gian lâu sau đó thì mình mới có thể nhận lại kết quả ban đầu, cũng là con số `seed` mình nhận được lúc đầu tiên. Lúc này mình thắc mắc là do bên server nó cố tình code như thế, hay là do mình đã chưa hiểu gì đó về mấy cái mạng network này @@, hoặc có thể có đoạn nào đó trong bin mình đã đọc chưa kĩ =((((
