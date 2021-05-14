@@ -46,7 +46,7 @@ Tiếp theo là hàm `inputID()`
 Hàm `inputID()`, bắt đầu tới hàm mình cần quan tâm tới. Nhìn sơ qua thì hàm yêu cầu một vài thứ:
   - ID phải có kí tự `H` ở đầu
   - Tiếp theo đó sẽ là 8 chữ số bất kì, ví dụ: `H12345678`
-  - Số trong ID phải được tạo ra dựa trên họ và tên bằng cách tạo seeds theo các kí tự trong họ tên, sau đó lây random số đầu tiên:
+  - Số trong ID phải được tạo ra dựa trên họ và tên bằng cách tạo seeds theo các kí tự trong họ tên, sau đó lấy random số đầu tiên chia dư cho 100000000:
 
 <p align="center">
   <img src="./majorChangeApplication7.png" alt="Entry point"/>
