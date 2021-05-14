@@ -4,7 +4,7 @@
   <img src="./0xC0F1D_1.png" alt="Entry point"/>
 </p>
 
-# [0xCOF1D](./0xCOF1D)
+# File: [0xCOF1D](./0xCOF1D)
 
 # Solve
 
