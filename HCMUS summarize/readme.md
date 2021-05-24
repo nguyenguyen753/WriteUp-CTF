@@ -17,7 +17,7 @@ Flag gồm 5 từ, mỗi từ được hash thành mã md5, sau đó lên mạng
 File PE sẽ tạo ra một file PE khác và kết nối vào để kiểm tra input, một hồi xem xét thì ta biết rằng file PE dùng mã SHA256 để kiểm tra input, lên mạng dò ta ra được chuỗi `hello`
 
 # CrackMe
-SHA256-Crypt + rsa, xài hashcat
+SHA512-Crypt + rsa, xài hashcat
 
 # Maquerade
 một file mp3, một file java class và 1 file zip. file mp3 ra mật khẩu `pwd785$`, còn cái java class crack sẽ cho ra `897268$}`, và ta có được flag
