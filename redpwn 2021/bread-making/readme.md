@@ -65,7 +65,7 @@ Tới đây ta có thể debug để tìm hiểu chương trình.
 Sau một hồi debug thì mình thấy rằng chương trình có tổng cộng 11 câu hỏi, và ta phải trả lời đúng hết 11 câu hỏi đó thì 5 biến `check` sẽ được bật lên thành bit 1, từ đó ta sẽ có được flag.
 Tới đây mình xài `pwntool` để viết client-script để gửi lên server, đoạn chương trình như sau:
 
-``script.py
+## script.py
 
 ```python
 from pwn import *
