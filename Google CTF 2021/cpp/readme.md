@@ -9,7 +9,7 @@
 # Solve:
 Mở file `cpp.c` thì thấy một đóng code loằng ngoằng ở phía trên hàm main, một hồi tra Google thì biết được đây gọi là preprocessor (Tài liệu tham khảo: [https://www.geeksforgeeks.org/preprocessor-works-c/](https://www.geeksforgeeks.org/preprocessor-works-c/))  
 Tóm tắt lại thè preprocessor là một phần trong chương trình C trước khi đưa vào compiler, nó sẽ chạy trước.  
-Mình thấy có vẻ như không debug được nên mình đã xem sơ qua chương trình thực hiện gì thì mình thấy có 3 phần chính:
+Mình thấy có vẻ như không debug được nên mình đã xem sơ qua chương trình thực hiện gì thì mình thấy có 3 phần chính:  
 	Phần input: 
 
 <p align="center">
