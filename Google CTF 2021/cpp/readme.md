@@ -4,7 +4,7 @@
   <img src="./Image/cpp0.png" alt="Entry point"/>
 </p>
 
-# File: [wstrings](./wstrings)
+# File: [cpp.c](./cpp.c)
 
 # Solve:
 Mở file `cpp.c` thì thấy một đóng code loằng ngoằng ở phía trên hàm main, một hồi tra Google thì biết được đây gọi là preprocessor (Tài liệu tham khảo: [https://www.geeksforgeeks.org/preprocessor-works-c/](https://www.geeksforgeeks.org/preprocessor-works-c/))  
