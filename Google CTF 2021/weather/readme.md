@@ -7,7 +7,7 @@
 # File: [weather](./weather)
 
 # Disclaimer:
-Bài này lúc thi mình không giải ra, vì lúc đầu mình đã có một vài nhận xét sai nên nghĩ rằng không làm được. Nhưng trước khi kết thúc kì thi khoảng 6 tiếng thì mình có xem lại bài và phát hiện là những nhận xét của mình có phần sai sót. Sau khi đánh giải lại thì mình thấy mình có thể làm được bài này, nhưng không còn thời gian để giải trong lúc thi nữa. Bài này mình giải được sau khi thi 2 ngày, nhưng mình khá tự hào vì đã tự giải quyết nó mà không có sự trợ giúp từ bên ngoài.
+Bài này lúc thi mình không giải ra, vì lúc đầu mình đã có một vài nhận xét sai nên nghĩ rằng không làm được. Nhưng trước khi kết thúc kì thi khoảng 6 tiếng thì mình có xem lại bài và phát hiện là những nhận xét của mình có phần sai sót. Sau khi đánh giá lại thì mình thấy mình có thể làm được bài này, nhưng không còn thời gian để giải trong lúc thi nữa. Bài này mình giải được sau khi thi 2 ngày, nhưng mình khá tự hào vì đã tự giải quyết nó mà không có sự trợ giúp từ bên ngoài.
 
 # Solve:
 Bài này đòi hỏi một vài kiến thức khá mới lạ so với những WriteUp trước đó mình viết, nên mình sẽ nói về những kiến thức đó trong bài này:
