@@ -39,9 +39,9 @@ Và ... có một đống hàm `register_printf_function`...
 Hàm printf được dùng để xuất kết quả ra chương trình, tuy nhiên hàm đòi hỏi một tham số khá quan trọng, đó là tham số `format`, mính sẽ không nói chi tiết printf hoạt động như thế nào, các bạn có thể lên google tra thử.  
 Thì như tiêu đề, tham số `format` hoàn toàn có thể custom được, hay nói cách khác, ta có thể tạo ra một (`format`) mới theo ý của riêng ta.  
 Để giúp đỡ chúng ta trong việc tạo `format` mới, hàm `register_printf_function` được ra đời. Lên mạng đọc về hàm này thì mình sẽ tóm tắt lại một số điều quan trọng của hàm như sau:
-	* Hàm truyền vào 3 tham số.
-	* Tham số đầu tiền là `format` mình muốn sử dụng. Ví dụng `format` mình muốn dùng là `Y` thì ta có thể `printf('%Y')`
-	* Tham số thứ hai là con trỏ trỏ đến chương trình sẽ được xử lí khi gọi `format`.
+  * Hàm truyền vào 3 tham số.
+  * Tham số đầu tiền là `format` mình muốn sử dụng. Ví dụng `format` mình muốn dùng là `Y` thì ta có thể `printf('%Y')`
+  * Tham số thứ hai là con trỏ trỏ đến chương trình sẽ được xử lí khi gọi `format`.
 Mình ví dụ:
 
 <p align="center">
@@ -76,9 +76,9 @@ Nó sẽ gọi cho `%C`, ta xem tiếp `%C` nó làm gì:
 Hmmmmmm, nhìn khá phức tạp. Nếu như tham khảo tài liệu kĩ hơn thì ta sẽ hiểu ngoài format ra ta còn có những tham số truyền vào format, ví dụ như `%+12.45llF`. Ở đây có 4 phần: Dấu `+`, số `12`, số `45` và kí hiệu `ll`  
 Những phần này sẽ quyết định các tham số và 'opcode' của chương trình. Đúng vậy, đây là một bài Virtual Machine.
 Lúc này mình debug để hiểu thêm và phát hiện có 3 phase chính:  
-	* Phase 1: Magic byte. Ở đây nếu như kí tự đầu tiên không đúng với magic byte thì chương trình sẽ lập tức kết thúc. Một hồi debug thì Magic byte = `T`
-	* Phase 2: Init: chương trình sẽ chuẩn bị một vài tham số để thực hiện Phase 3.
-	* Phase 3: Encrypt Input. Từ tham số được chuẩn bị ở phase 2, chương trình sẽ encrypt input và so sánh kết quả sau khi encrypt. Nếu như so sánh không khớp thì kết quả trả về là `nope`, còn nếu đúng thì chương trình trả về flag
+  * Phase 1: Magic byte. Ở đây nếu như kí tự đầu tiên không đúng với magic byte thì chương trình sẽ lập tức kết thúc. Một hồi debug thì Magic byte = `T`
+  * Phase 2: Init: chương trình sẽ chuẩn bị một vài tham số để thực hiện Phase 3.
+  * Phase 3: Encrypt Input. Từ tham số được chuẩn bị ở phase 2, chương trình sẽ encrypt input và so sánh kết quả sau khi encrypt. Nếu như so sánh không khớp thì kết quả trả về là `nope`, còn nếu đúng thì chương trình trả về flag
 
 Bài này mình có viết script để dịch opcode cho dễ hiểu, nhưng script mình viết chỉ có một mình bản thân mình hiểu nên mình không dám đưa script lên :p, tuy nhiên script không quá khó, các bạn có thể debug để hiểu thêm và viết script cho bản thân.  
 Mình đã nhảy sang Phase 3 để mình tìm các tham số và viết một chương trình để decrypt lại tìm input phù hợp:
