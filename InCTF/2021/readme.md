@@ -1,7 +1,7 @@
 ## Do sắp thi học kì nên mình không có viết wu, mà chỉ tóm tắt cách giải.
 
 # find_plut0
-Bài này đưa vào z3. Nhưng lưu ý biểu thức cuối cùng xài logical shfit right. nếu xài dấu `>>` có thể sẽ dẫn đến sai kết quả. Tham khảo tại đây: (https://stackoverflow.com/questions/25532563/why-does-z3-say-that-this-equation-is-not-satisfiable-when-i-have-input-that-is)[https://stackoverflow.com/questions/25532563/why-does-z3-say-that-this-equation-is-not-satisfiable-when-i-have-input-that-is]
+Bài này đưa vào z3. Nhưng lưu ý biểu thức cuối cùng xài logical shfit right. nếu xài dấu `>>` có thể sẽ dẫn đến sai kết quả. Tham khảo tại đây: [https://stackoverflow.com/questions/25532563/why-does-z3-say-that-this-equation-is-not-satisfiable-when-i-have-input-that-is](https://stackoverflow.com/questions/25532563/why-does-z3-say-that-this-equation-is-not-satisfiable-when-i-have-input-that-is)
 
 # REplica
 Bài này sẽ swap thứ tự input và so sánh với string file cho.
